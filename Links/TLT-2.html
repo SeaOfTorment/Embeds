@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/SeaOfTorment/Public/main/PosterAlt.png" />
+  <meta name="twitter:player" id="URL" content="https://ertzaa.sn.files.1drv.com/y4m8f5I5lmssftFIw0XBS6VQmuAK0CaD3uqCbx9nwIxg9nSUfHh8dODb07NP1-I3ApgTf9WEmQeQlLnwJaewofc8GOcwzO1w4GSBBD9TgMtfRNuTu-p9jTG9Cyj1VL_H0-T_VmFMG-yCm4wXiTv6IjT0BFoW02dyMkniXnoNkm5vy-9A3kJFg9WYVlSFueZfCAC4epsc3Xq9rCMQDw69qTY3A/Thor%20Love%20and%20Thunder%20%282022%29.mp4" />
+  <meta name="twitter:player:width" content="420" />
+  <meta name="twitter:player:height" content="236" />
+  <meta name="twitter:player:stream:content_type" content="video/mp4" />
+
+  <title>Juno Video</title>
+</head>
+
+<body>
+  <video controls>
+    <source id="vidURL" preload type="video/mp4">
+  </video>
+</body>
+
+</html>
+
+<style>
+  html,
+  body,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  video { 
+    display: grid; 
+  }
+
+  body {
+    background-color: #000000;
+  }
+</style>
+
+<script>
+  document.getElementById("vidURL").src = document.getElementById("URL").getAttribute('content');
+</script>
