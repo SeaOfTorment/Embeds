@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:player" id="URL" content="https://dl.dropboxusercontent.com/s/q28qbml8w7qi8ai/Daria%20113%20The%20Misery%20Chick-00.19.04.611-00.20.30.030.mp4?dl=1" />
+  <meta name="twitter:player:width" content="420" />
+  <meta name="twitter:player:height" content="236" />
+  <meta name="twitter:player:stream:content_type" content="video/mp4" />
+
+  <title>Juno Video</title>
+</head>
+
+<body>
+  <video controls>
+    <source id="vidURL" preload type="video/mp4">
+  </video>
+</body>
+
+</html>
+
+<style>
+  html,
+  body,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  video { 
+    display: grid; 
+  }
+
+  body {
+    background-color: #000000;
+  }
+</style>
+
+<script>
+  document.getElementById("vidURL").src = document.getElementById("URL").getAttribute('content');
+</script>
